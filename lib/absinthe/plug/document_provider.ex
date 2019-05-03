@@ -50,7 +50,7 @@ defmodule Absinthe.Plug.DocumentProvider do
   Given a request, determine what part of its configured pipeline
   should be applied during execution.
   """
-  @callback pipeline(Absinthe.Plug.Request.t) :: Absinthe.Pipeline.t
+  @callback pipeline(map()) :: Absinthe.Pipeline.t
 
   @doc """
   Given a request, attempt to process it with this document provider.
